@@ -1,0 +1,12 @@
+|is-engage
+||introduction: In this page, you can request an edit to your profile.<br />DEVNOTE - The Fields can be diferent (shown) / prefilled (will do).
+
+#content	section	item_vars	section-intro	dev_comments
+Email	Changed Information		Has your contact info changed?
+Phone Number(s)	Changed Information	
+
+Address	Changed Location	large	Has Your Location Changed?
+City	Changed Location			(suggested by developer)
+Postcode	Changed Location			(suggested by developer)
+
+What has Changed	Changed Background	large	What to update in Affiliations / Publications / Industry?

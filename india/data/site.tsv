@@ -1,0 +1,15 @@
+#key	value
+name	India
+byline	PsyRes Demo Site
+safeName	intrepid-india
+footer-message	[Confidential :: Sample Screens for I-III: India]
+siteMenuName	WMM: India
+scaffold	search, sitemap
+sections	about-us
+|locals
+local-url	http://localhost/networks/many/live/india/
+local-preview-url	http://localhost/networks/many/india/
+|lives
+live-url	https://many.amadeusweb.site/india/
+live-preview-url	https://preview-many.amadeusweb.site/india/
+year	2021

@@ -1,0 +1,11 @@
+:root {
+	--after-content-background: #DBF1EA;
+	--cnvs-body-bg: #F1FCFF;
+	--cnvs-footer-bg: #FFFFFF;
+}
+
+body.theme-canvas .menu-link { padding-top: 10px; padding-bottom: 10px; } /* menu */
+
+
+.icon.site-wmm { background-image: url(intrepid-wmm-icon.png); }
+.icon.site-india { background-image: url(intrepid-india-icon.png); }

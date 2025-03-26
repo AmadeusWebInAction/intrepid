@@ -1,0 +1,30 @@
+|is-engage
+||introduction: In this page, you can register as a contributing user.
+#content	section	item_vars	section-intro	dev_comments
+Salutation	Basic Information	open, one-of: Mr|Mrs|Ms	Please fill out this General Information about yourself.
+First Name	Basic Information	open
+Last Name	Basic Information	open
+Email	Basic Information	open
+Phone Number(s)	Basic Information	open
+
+Address	Location	large, open	Do tell us where you are from
+City	Location	open		(suggested by developer)
+Postcode	Location	open		(suggested by developer)
+Country	Location	open, one-of: India|Trinidad|Nigeria
+
+Qualifications	Background	large, open	Tell us more about yourself.
+Affiliations	Background	large
+Publications	Background	large
+Employment Industry	Background	
+Interest in WMM	Background	large, open, one-of: Care Giver|Care Receiver|Healthcare Professional|Student		(suggested by developer)
+
+Reference 1 Name	Reference 1	open	Please give us at least one reference
+Reference 1 Affiliation	Reference 1	open
+Reference 1 Email	Reference 1	open
+
+Reference 2 Name	Reference 2		A second reference is optional
+Reference 2 Affiliation	Reference 2	
+Reference 2 Email	Reference 2	
+
+You must agree to our <a href="%url%terms-and-legalese/" target="_blank">Terms and Clauses</a>. Kindly type I AGREE in the box below and leave the link open as well.	Mandatory	open	
+%url%/terms and legalese/?v=.5	Mandatory	open
