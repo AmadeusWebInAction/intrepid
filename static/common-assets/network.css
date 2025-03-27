@@ -6,6 +6,8 @@
 
 body.theme-canvas .menu-link { padding-top: 10px; padding-bottom: 10px; } /* menu */
 
+body:not(.no-slider) header.dark { --cnvs-primary-menu-submenu-bg: #fff; }
+body:not(.no-slider) header.dark.transparent-header .primary-menu { background-color: #fff; }
 
 .icon.site-wmm { background-image: url(intrepid-wmm-icon.png); }
 .icon.site-india { background-image: url(intrepid-india-icon.png); }

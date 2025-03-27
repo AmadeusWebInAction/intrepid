@@ -10,7 +10,7 @@
 					<div class="row course-categories mb-4">
 
 <?php
-addStyle('course', 'app-themes--canvas/demos/course/');
+addStyle('course', 'app-themes--canvas/demos/course');
 
 //name_urlized	about	tags	sno	uid	icon-class	color
 $tpl = '

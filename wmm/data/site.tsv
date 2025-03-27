@@ -5,7 +5,7 @@ safeName	intrepid-wmm
 footer-message	[Confidential :: Sample Screens for I-III: WMM]
 siteMenuName	WMM
 scaffold	search, sitemap
-sections	resources, my-area
+sections	resources, listings, my-area
 |locals
 local-url	http://localhost/networks/many/live/wmm/
 local-preview-url	http://localhost/networks/many/wmm/

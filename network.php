@@ -14,13 +14,12 @@ variables([
 	'site-static-folder' => NETWORKPATH . '/' . SITENAME . '/',
 	'site-static' => $static . SITENAME . '/',
 
+	'standalone-sections' => ['listings'],
+
 	'link-to-section-home' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
 	'assistantEmail' => 'assistant+many-demo@amadeusweb.world',
-	//
-	//'sections-have-files' => true,
-	//'no-page-menu' => true, //doesnt as yet support sections with files
 ]);
 
 variables($d = [
