@@ -24,9 +24,11 @@ variables([
 ]);
 
 variables($d = [
-	'default-search' => $mn = 'manypreview',
+	'default-search' => $ds = 'preview',
 	'searches' => [
-		$mn => ['code' => '05b9cd218248f44f0', 'name' => 'II for Now', 'description' => '[Planning a WMM site III]'],
+		'main' => ['code' => '05b9cd218248f44f0', 'name' => 'II Main Site', 'description' => '[Planning a WMM site III]'],
+		'research' => ['code' => '92ff745007df44075', 'name' => 'II Research', 'description' => 'Research Partners'],
+		$ds => ['code' => '41775c0079ee9410b', 'name' => 'Demo Sites', 'description' => 'In Progress Demo Site'],
 	],
 ]);
 

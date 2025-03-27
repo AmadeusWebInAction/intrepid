@@ -1,11 +1,11 @@
-#name_urlized	about	tags	sno	uid
-illnesses			1	acmagnam
-psychoeducation-faqs			2	orbiprae
-diagnosis			3	sentcons
-common-mental-health-terminology			4	equatdol
-types-of-formal-therapy			5	oradipis
-types-of-informal-care			6	cingpret
-bibliotherapy			7	iumetpel
-common-issues			8	lentesqu
-legal			9	eetphare
-technological-aids			10	traadipi
+#name_urlized	about	tags	sno	uid	icon_class
+illnesses			1	acmagnam	uil-capsule
+psychoeducation-faqs			2	orbiprae	uil-question-circle
+diagnosis			3	sentcons	uil-sad
+common-mental-health-terminology			4	equatdol	uil-file-medical-alt
+types-of-formal-therapy			5	oradipis	uil-shield-plus
+types-of-informal-care			6	cingpret	uil-band-aid
+bibliotherapy			7	iumetpel	uil-clinic-medical
+common-issues			8	lentesqu	uil-medical-square
+legal			9	eetphare	uil-file-contract
+technological-aids			10	traadipi	uil-atom
