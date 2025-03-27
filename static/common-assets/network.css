@@ -9,5 +9,8 @@ body.theme-canvas .menu-link { padding-top: 10px; padding-bottom: 10px; } /* men
 body:not(.no-slider) header.dark { --cnvs-primary-menu-submenu-bg: #fff; }
 body:not(.no-slider) header.dark.transparent-header .primary-menu { background-color: #fff; }
 
-.icon.site-wmm { background-image: url(intrepid-wmm-icon.png); }
+.icon.site-home { background-image: url(intrepid-home-icon.png); }
 .icon.site-india { background-image: url(intrepid-india-icon.png); }
+
+.footer-message { font-weight: bold; color: #1369B6; letter-spacing: 2px; }
+.footer-message strong { font-size: 120%; color: #DB3417; }

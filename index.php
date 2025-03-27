@@ -1,3 +1,3 @@
 <?php
-define('SITEPATH', __DIR__ . '/wmm');
+define('SITEPATH', __DIR__ . '/home');
 include_once 'amadeusweb-loader.php';

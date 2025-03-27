@@ -1,11 +1,11 @@
 <?php
 $staticUrls = [
 	//locals
-	'local-url' => 'http://localhost/networks/many/live/static/',
-	'local-preview-url' => 'http://localhost/networks/many/static/',
+	'local-url' => 'http://localhost/networks/intrepid/live/static/',
+	'local-preview-url' => 'http://localhost/networks/intrepid/static/',
 	//lives
-	'live-url' => 'https://many.amadeusweb.site/static/',
-	'live-preview-url' => 'https://preview-many.amadeusweb.site/static/',
+	'live-url' => 'https://intrepid.amadeusweb.site/static/',
+	'live-preview-url' => 'https://preview-intrepid.amadeusweb.site/static/',
 ];
 
 variables([
@@ -14,12 +14,12 @@ variables([
 	'site-static-folder' => NETWORKPATH . '/' . SITENAME . '/',
 	'site-static' => $static . SITENAME . '/',
 
-	'standalone-sections' => ['listings'],
+	'standalone-sections' => ['listings', 'what-matters-most'],
 
 	'link-to-section-home' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
-	'assistantEmail' => 'assistant+many-demo@amadeusweb.world',
+	'assistantEmail' => 'assistant+intrepid-demo@amadeusweb.world',
 ]);
 
 variables($d = [

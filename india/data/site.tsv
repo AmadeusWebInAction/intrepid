@@ -1,15 +1,15 @@
 #key	value
-name	India
-byline	PsyRes Demo Site
+name	Intrepid India
+byline	Leading INTREPID from Chennai
 safeName	intrepid-india
-footer-message	[Confidential :: Sample Screens for I-III: India]
-siteMenuName	WMM: India
+footer-message	The Indian Chapter of [IntrepidResearch.org](https://intrepidresearch.org)
+siteMenuName	Intrepid India
 scaffold	search, sitemap
 sections	about-us
 |locals
-local-url	http://localhost/networks/many/live/india/
-local-preview-url	http://localhost/networks/many/india/
+local-url	http://localhost/networks/intrepid/live/india/
+local-preview-url	http://localhost/networks/intrepid/india/
 |lives
-live-url	https://many.amadeusweb.site/india/
-live-preview-url	https://preview-many.amadeusweb.site/india/
+live-url	https://intrepid.amadeusweb.site/india/
+live-preview-url	https://preview-intrepid.amadeusweb.site/india/
 year	2021
