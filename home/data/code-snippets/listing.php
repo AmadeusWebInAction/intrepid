@@ -11,7 +11,7 @@ foreach ($items as $ix => $text) {
 	$heading = implode(' ', $bits);
 	h2( humanize($heading) );
 	echo $text;
-	if ($ix == 2) break;
+	if ($ix == 3) break;
 }
 
 $result = doToBuffering(2);

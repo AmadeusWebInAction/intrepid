@@ -1,7 +1,7 @@
 				<div class="container content-box">
 
 					<div class="heading-block border-bottom-0 my-4 text-center">
-						<h3>Psy Resources by <?php echo variable('name'); ?></h3>
+						<h3><?php echo variable('byline'); ?></h3>
 						<span></span>
 					</div>
 
@@ -24,13 +24,13 @@ $tpl = '
 						</div>
 ';
 
-$sheet = getSheet(SITEPATH . '/resources/_nodes.tsv', false);
+$sheet = getSheet(SITEPATH . '/general/_section.tsv', false);
 
 foreach ($sheet->rows as $item) {
 	$replace = [
 		'url' => variable('page-url'),
 		'network-url' => getHtmlVariable('network-url'),
-		'slug' => $slug = $sheet->getValue($item, 'name_urlized'),
+		'slug' => $slug = $sheet->getValue($item, 'slug'),
 		'name' => humanize($slug),
 		'icon-class' => $sheet->getValue($item, 'icon_class'),
 	];

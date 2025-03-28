@@ -1,5 +1,4 @@
 <?php
-contentBox('wmm', 'container after-content');
-h2('What Matters Most');
-renderMarkdown('%latin-codesnippet%');
-contentBox('end');
+runResource(stripExtension(__FILE__), [
+	'section' => pathinfo(__DIR__, PATHINFO_FILENAME),
+	'where' => __DIR__]);

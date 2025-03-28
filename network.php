@@ -14,13 +14,31 @@ variables([
 	'site-static-folder' => NETWORKPATH . '/' . SITENAME . '/',
 	'site-static' => $static . SITENAME . '/',
 
-	'standalone-sections' => ['listings', 'what-matters-most'],
+	'standalone-sections' => ['what-matters-most', 'general', 'listings'],
 
 	'link-to-section-home' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
 	'assistantEmail' => 'assistant+intrepid-demo@amadeusweb.world',
 ]);
+
+runExtension('resources');
+
+function before_render_section($slug) {
+	$standalones = variableOr('standalone-sections', []);
+	if (!in_array($slug, $standalones)) return false;
+	$node = variable('node');
+	if ($slug == $node || isResourceNode($slug, null)) {
+		variables([
+			'section' => $slug,
+			'file' => variable('path') . '/' . $slug . '/home.php',
+			'is-standalone-section' => true,
+			'no-page-menu' => true,
+		]);
+		return true;
+	}
+	return false;
+}
 
 variables($d = [
 	'default-search' => $ds = 'preview',

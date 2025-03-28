@@ -1,4 +1,4 @@
 <?php
-$result = ['support-groups' => '1. Available Support Groups'];
-//$result = [];
-return $result;
+return runResource(stripExtension(__FILE__), [
+	'section' => pathinfo(__DIR__, PATHINFO_FILENAME),
+	'where' => __DIR__]);
