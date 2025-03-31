@@ -5,7 +5,7 @@ safeName	intrepid-home
 footer-message	**INT**ernational **RE**search Programme on **P**sychoses **I**n **D**iverse Settings
 siteMenuName	Intrepid III
 scaffold	search, sitemap
-sections	what-matters-most, general, listings, my-area
+sections	what-matters-most, general, listings, my
 |locals
 local-url	http://localhost/networks/intrepid/live/home/
 local-preview-url	http://localhost/networks/intrepid/home/

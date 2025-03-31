@@ -45,9 +45,9 @@ function before_render_section($slug) {
 variables($d = [
 	'default-search' => $ds = 'preview',
 	'searches' => [
-		'main' => ['code' => '05b9cd218248f44f0', 'name' => 'II Main Site', 'description' => '[Planning a WMM site III]'],
-		'research' => ['code' => '92ff745007df44075', 'name' => 'II Research', 'description' => 'Research Partners'],
-		$ds => ['code' => '41775c0079ee9410b', 'name' => 'Demo Sites', 'description' => 'In Progress Demo Site'],
+		'main' => ['code' => '05b9cd218248f44f0', 'name' => 'Main Site', 'description' => ''],
+		'research' => ['code' => '92ff745007df44075', 'name' => 'Research Orgs', 'description' => ''],
+		$ds => ['code' => '41775c0079ee9410b', 'name' => 'This Demo Site', 'description' => ''],
 	],
 ]);
 
