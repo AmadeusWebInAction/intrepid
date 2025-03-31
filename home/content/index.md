@@ -8,17 +8,6 @@ link: #123
 
 Lorem ipsum dolor sit amet consectetuer mauris odio Vestibulum at odio. Tempus ut a convallis vitae eget.
 
-## INTRODUCTION TO WHAT MATTERS MOST (WMM)
-
-<!--//meta
-link: #456
-//meta-->
-
-
-Ipsum diam auctor Aliquam tincidunt tristique Morbi laoreet sem hendrerit Aenean. Commodo ante wisi aliquet non est id.
-
-**<i>[TODO: explain how this website is a living repository and the concept of Contributing User]</i>**
-
 ## DISCLAIMER
 
 <!--//meta
@@ -43,3 +32,14 @@ link: #345
 //meta-->
 
 Felis nibh tincidunt vitae velit neque Integer at quis nulla dictumst. Consequat ac felis hac a massa Vestibulum sapien augue Vestibulum parturient. Et fames.
+
+## INTRODUCTION TO WHAT MATTERS MOST (WMM)
+
+<!--//meta
+link: #456
+//meta-->
+
+
+Ipsum diam auctor Aliquam tincidunt tristique Morbi laoreet sem hendrerit Aenean. Commodo ante wisi aliquet non est id.
+
+**<i>[TODO: explain how this website is a living repository and the concept of Contributing User]</i>**

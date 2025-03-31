@@ -17,6 +17,7 @@ variables([
 	'standalone-sections' => ['what-matters-most', 'general', 'listings'],
 
 	'link-to-section-home' => true,
+	'hide-sections-in-footer' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
 	'assistantEmail' => 'assistant+intrepid-demo@amadeusweb.world',
