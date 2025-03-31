@@ -28,7 +28,8 @@ function before_render_section($slug) {
 	$standalones = variableOr('standalone-sections', []);
 	if (!in_array($slug, $standalones)) return false;
 	$node = variable('node');
-	if ($slug == $node || isResourceNode($slug, null)) {
+	$context = ['section' => $slug, 'where' => variable('path') . '/' . $slug . '/'];
+	if ($slug == $node || isResourceNode($slug, $context)) {
 		variables([
 			'section' => $slug,
 			'file' => variable('path') . '/' . $slug . '/home.php',

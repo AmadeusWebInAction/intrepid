@@ -12,6 +12,7 @@ include_once __DIR__ . $extraUp . '/../../awe/core/framework/1-entry.php';
 
 variables([
 	'use-preview' => true,
+	'no-network-in-footer' => true,
 	'network' => true
 ]);
 

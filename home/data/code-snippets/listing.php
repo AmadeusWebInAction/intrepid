@@ -5,7 +5,7 @@ doToBuffering(1);
 
 foreach ($items as $ix => $text) {
 	contentBox('end'); contentBox('', 'container' .
-		($ix % 2 == 0 ? ' after-content' : ''));
+		($ix % 2 == 0 ? ' alternate-box' : ''));
 	$bits = explode(' ', $text, 4);
 	array_pop($bits);
 	$heading = implode(' ', $bits);
