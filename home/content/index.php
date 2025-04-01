@@ -63,7 +63,7 @@ foreach ($boxes as $ix => $item) {
 $items = disk_include(SITEPATH . '/what-matters-most/menu.php');
 foreach ($items as $slug => $title) {
 	$image = siteOrNetworkOrAppStatic('what-matters-most/' . (true ? 'wmm-default' : $slug) . '.jpg');
-	$content = renderMarkdown('%latin-2paras-codesnippet%', ['echo' => false]);
+	$content = getCodeSnippet('latin-2paras');
 	$link = pageUrl($slug);
 	$type = 'what-matters-most';
 	$type_r = humanize($type);

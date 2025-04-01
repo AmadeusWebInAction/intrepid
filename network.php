@@ -1,4 +1,6 @@
 <?php
+disk_include_once(__DIR__ . '/auth-config.php');
+
 $staticUrls = [
 	//locals
 	'local-url' => 'http://localhost/networks/intrepid/live/static/',
@@ -14,32 +16,54 @@ variables([
 	'site-static-folder' => NETWORKPATH . '/' . SITENAME . '/',
 	'site-static' => $static . SITENAME . '/',
 
-	'standalone-sections' => ['what-matters-most', 'general', 'listings'],
+	'standalone-sections' => ['what-matters-most', 'general', 'listings', 'my'],
+	'footer-variation' => '-single-widget',
 
 	'link-to-section-home' => true,
-	'hide-sections-in-footer' => true,
+	'no-sections-in-footer' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
 	'assistantEmail' => 'assistant+intrepid-demo@amadeusweb.world',
 ]);
 
 runExtension('resources');
+runExtension('biblios');
 
 function before_render_section($slug) {
 	$standalones = variableOr('standalone-sections', []);
 	if (!in_array($slug, $standalones)) return false;
+
 	$node = variable('node');
-	$context = ['section' => $slug, 'where' => variable('path') . '/' . $slug . '/'];
-	if ($slug == $node || isResourceNode($slug, $context)) {
+	$context = [
+		'section' => $slug,
+		'where' => variable('path') . '/' . $slug . '/',
+		'limit' => -1,
+		'callingFrom'=> 'section-check',
+	];
+
+	if ($slug == $node || isResourceNode($slug, $context) || isNonResourceNode($slug, $context)) {
 		variables([
 			'section' => $slug,
-			'file' => variable('path') . '/' . $slug . '/home.php',
+			'file' => variableOr('file', variable('path') . '/' . $slug . '/home.php'),
 			'is-standalone-section' => true,
 			'no-page-menu' => true,
 		]);
 		return true;
 	}
 	return false;
+}
+
+function isNonResourceNode($slug, $context) {
+	$fol = SITEPATH . '/' . $slug . '/';
+	$file = $fol . 'menu.php';
+	$items = disk_include($file, $context);
+	$node = variable('node');
+
+	if (!isset($items[$node])) return false;
+
+	$fileLookup = variableOr(getSectionKey($slug, FILELOOKUP), []);
+	variable('file', isset($fileLookup[$node]) ? $fol . $fileLookup[$node]['relative-path'] : false);
+	return true;
 }
 
 variables($d = [

@@ -1,6 +1,6 @@
 ## Terms of %siteName%
 
-This has to be agreed to and is part of [the registration](%forms/create-profile/).
+This has to be agreed to and is part of [the registration](%url%forms/create-profile/).
 
 ---
 
