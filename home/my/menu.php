@@ -22,27 +22,34 @@ if (role_is(NOTLOGGEDIN)) {
 	$op['login'] = 'Login';
 	$op['create-profile'] = 'Sign Up';
 	$needsLogout = false;
+/*
 } else if (role_is(MEMBER)) {
 	variable($menuKey, 'Membership');
 	$op['update-profile'] = 'My Profile';
 	$op['searches'] = 'My Saved Searches';
+*/
 } else if (role_is(CONTRIBUTOR)) {
-	variable($menuKey, 'Contribute');
+	//variable($menuKey, 'Contribute');
 	$op['suggest'] = 'Make a Suggestion';
 } else if (role_is(CUSTODIAN)) {
-	variable($menuKey, 'My Dashboard');
+	//variable($menuKey, 'My Dashboard');
 	$op['my-pages'] = 'My Pages and Dashboard';
 } else if (role_is(EDITOR)) {
-	variable($menuKey, 'My Approvals');
+	//variable($menuKey, 'My Approvals');
 	$op['approvals'] = 'Approve Suggestions';
 } else if (role_is(SUPERADMIN)) {
-	variable($menuKey, 'Webmaster Tools');
+	//variable($menuKey, 'Webmaster Tools');
 	$op['site-admin'] = 'Site Administration';
 }
 
 if (!count($op)) peDie('15', [$op, $_SESSION]);
 
-if ($needsLogout) $op['logout'] = 'Logout';
+
+$me = variable('all-roles')[variable(USERROLE)];
+variable($menuKey, $me['demo-name'] .  ' (' . $me['status'] . ')');
+variable($menuKey . '_home', 'off');
+
+if ($needsLogout || variable('node') == 'logout') $op['logout'] = 'Logout';
 
 variable(getSectionKey($section, MENUITEMS), $op);
 return $op;

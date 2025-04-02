@@ -1,4 +1,15 @@
-<?php contentBox('my', 'container'); ?>
+<?php
+contentBox('my', 'container');
+if (!variable('local1') && !isset($_GET['demo'])) {
+	echo returnLine('<div class="alert alert-success" role="alert">
+	<h3 class="alert-heading mb-3">Being Built!</h3>
+	<p class="mb-0">In time, this page will become a "dashboard".</p>
+	<hr><p class="mb-0">Until then, you may try <a href="%url%%section%/?demo=1">the demo controls</a>.</p>
+</div>');
+	contentBox('end');
+	return;
+}
+?>
 <div class="row">
 	<div class="col-12">
 	<?php h2(returnLine('[Demo Controls](%url%my/)')); echo HRTAG . NEWLINE; ?>

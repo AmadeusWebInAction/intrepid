@@ -27,9 +27,10 @@ variables([
 ]);
 
 runExtension('resources');
-runExtension('biblios');
 
 function before_render_section($slug) {
+	runExtension('biblios'); //cannot run inline as "node" will not be set
+
 	$standalones = variableOr('standalone-sections', []);
 	if (!in_array($slug, $standalones)) return false;
 
