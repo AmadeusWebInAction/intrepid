@@ -26,6 +26,7 @@ variables([
 	'no-sections-in-footer' => true,
 	'link-to-site-home' => true,
 	'custom-engage-notes' => true,
+	'dont-show-current-menu' => true,
 	'assistantEmail' => 'assistant+intrepid-demo@amadeusweb.world',
 ]);
 

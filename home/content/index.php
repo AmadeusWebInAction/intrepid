@@ -1,5 +1,5 @@
 <?php
-$block = getThemeBlock('articles');
+$block = getThemeBlock('articles', SITEPATH . '/data');
 $filter = '			<li><a href="#" data-filter=".article-introduction">Introduction</a></li>
 			<li><a href="#" data-filter=".article-what-matters-most">What Matters Most</a></li>';
 
@@ -7,14 +7,8 @@ echo replaceItems($block['start'], ['filterButtons' => $filter, 'block-title' =>
 $itemTemplate = $block['item'];
 
 $first = false;
-$boxes = [
-	'intrepid-and-its-work',
-	'disclaimer',
-	'audience',
-	'scope',
-	'why-this-website',
-	'introduction-to-what-matters-most-(wmm)',
-];
+
+$boxes = textToList(disk_file_get_contents(SITEPATH . '/content/_menu-items.tsv'));
 
 foreach ($boxes as $ix => $item) {
 	$title = humanize($item);
@@ -22,15 +16,16 @@ foreach ($boxes as $ix => $item) {
 	$link = pageUrl($item);
 
 	$content = disk_file_get_contents(__DIR__ . '/' . $item . '.md');
-	$content = '<div class="hide-h2">' . renderMarkdown(explode('<!--more-->', $content)[0]
-		. getLink('Read More', pageUrl($item)), ['echo' => false]) . '</div>';
+	$content = trim(explode('<!--more-->', $content)[0]);
+	$content = '<div class="hide-h2">' . returnLines($content
+		. BRNL . getLink('Read More', pageUrl($item))) . '</div>';
 
 	$type = urlize($item) == 'introduction-to-what-matters-most-(wmm)' ? 'what-matters-most' : 'introduction';
 	$type_r = humanize($type);
 	echo replaceItems($itemTemplate, compact('type', 'type_r', 'title', 'image', 'content', 'link'), '%');
 }
 
-$items = disk_include(SITEPATH . '/what-matters-most/menu.php');
+$items = []; //disk_include(SITEPATH . '/what-matters-most/menu.php');
 foreach ($items as $slug => $title) {
 	$image = siteOrNetworkOrAppStatic('what-matters-most/' . (true ? 'wmm-default' : $slug) . '.jpg');
 	$content = ''; //getCodeSnippet('latin-2paras');
@@ -40,10 +35,10 @@ foreach ($items as $slug => $title) {
 	echo replaceItems($itemTemplate, compact('type', 'type_r', 'title', 'image', 'content', 'link'), '%');
 }
 
-$sectionBlocks = [
+$sectionBlocks = []; /*[
 	'general' => 'Topics that provide useful information',
 	'listings' => 'Contact details of useful supporting resources',
-];
+];*/
 foreach ($sectionBlocks as $slug => $title) {
 	$image = siteOrNetworkOrAppStatic('blocks/_' . $slug . '.jpg');
 	$content = ''; //getCodeSnippet('latin-2paras');
