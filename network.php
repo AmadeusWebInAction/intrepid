@@ -1,6 +1,9 @@
 <?php
 disk_include_once(__DIR__ . '/auth-config.php');
 
+if (SITENAME == 'home')
+	disk_include_once(SITEPATH . '/_demo/_magic.php');
+
 $staticUrls = [
 	//locals
 	'local-url' => 'http://localhost/networks/intrepid/live/static/',
