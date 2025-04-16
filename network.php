@@ -20,6 +20,7 @@ variables([
 	'site-static' => $static . SITENAME . '/',
 
 	'standalone-sections' => ['what-matters-most', 'general', 'listings', 'my'],
+	'no-name-in-header-menu' => ['what-matters-most'],
 	'footer-variation' => '-single-widget',
 
 	'link-to-section-home' => true,
