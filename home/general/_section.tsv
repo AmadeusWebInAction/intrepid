@@ -1,11 +1,108 @@
-#sno	slug	level	uid	icon_class
-1	illnesses	1	acmagnam	uil-capsule
-2	psychoeducation-faqs	1	orbiprae	uil-question-circle
-3	diagnosis	1	sentcons	uil-sad
-4	common-mental-health-terminology	1	equatdol	uil-file-medical-alt
-5	types-of-formal-therapy	1	oradipis	uil-shield-plus
-6	types-of-informal-care	1	cingpret	uil-band-aid
-7	bibliotherapy	1	iumetpel	uil-clinic-medical
-8	common-issues	1	lentesqu	uil-medical-square
-9	legal	1	eetphare	uil-file-contract
-10	technological-aids	1	traadipi	uil-atom
+#sno	parent	slug	level	introduction
+1		illnesses	1	This section covers major non-neurological mental health issues  
+2		psychoeducation-faqs	1	This section shares helpful information and FAQs on mental health
+3		diagnosis	1	This section discusses cues that help with the diagnosis of illnesses
+4		common-mental-health-terminology	1	This section elaborates on the common lexicon used in mental health
+5		types-of-formal-therapy	1	This section highlights different formal treatments for mental illness
+6		types-of-informal-care	1	This section lists different types of informal psychosocial therapies
+7		bibliotherapy	1	This section curates various readings and other content to get informed
+8		common-issues	1	This section dives into managing social aspects of mental health
+9		legal	1	This section provides material on common legal issues
+10		technological-aids	1	This section shares different kinds of technological aids available for mental health
+				
+|sub items for 1 - illnesses				
+|sno	parent	slug	level	introduction
+1.a	1	schizophrenia	2	
+1.b	1	bipolar-disorder	2	
+1.c	1	depression	2	
+1.d	1	adhd	2	
+1.e	1	ptsd	2	
+1.f	1	ocd	2	
+1.g	1	borderline-personality-disorder	2	
+
+|sub items for 2 - psychoeducation-faqs				
+|sno	parent	slug	level	introduction
+2.a	2	common	2	
+2.b	2	specific	2	
+2.b.i	2	schizophrenia	2	
+2.b.ii	2	bipolar-disorder	2	
+.b.iii	2	depression	2	
+2.b.iv	2	adhd	2	
+2.b.v	2	ptsd	2	
+2.b.vi	2	ocd	2	
+2.b.vii	2	borderline-personality-disorder	2	
+				
+|sub items for 3 - diagnosis				
+|sno	parent	slug	level	introduction
+3.a	3	ruling-out-neurological-causes	2	
+3.b	3	questions-to-ask-of-professional-carers	2	
+3.c	3	behavioural-red-flags	2	
+				
+|sub-sub items for 3.c - behavioural-red-flags				
+|sno	parent	slug	level	introduction
+3.c.i	3.c	sleep	3	
+3.c.ii	3.c	withdrawal	3	
+3.c.iii	3.c	ability-to-read	3	
+3.c.iv	3.c	personal-hygiene	3	
+3.c.v	3.c	relevance-to-context	3	
+3.c.vi	3.c	emotional-appropriateness	3	
+				
+|sub items for 4 - common-mental-health-terminology				
+|sno	parent	slug	level	introduction
+4.a	4	hallucination	2	
+4.b	4	delusions	2	
+4.c	4	hyper-or-hypomania	2	
+4.d	4	depression	2	
+				
+|sub items for 5 - types-of-formal-therapy				
+|sno	parent	slug	level	introduction
+5.a	5	cbt	2	
+5.b	5	journalling	2	
+5.c	5	recovery-international	2	
+5.d	5	relaxation-techniques	2	
+5.e	5	art-therapy	2	
+				
+|sub items for 6 - types-of-informal-care				
+|sno	parent	slug	level	introduction
+6.a	6	diet-and-nutrition	2	
+6.b	6	intentionally-left-blank	2	
+6.c	6	creative-and-recreational	2	
+6.d	6	support-&-peer-groups	2	
+6.e	6	community-care	2	
+6.f	6	exercise-&-physical-activity	2	
+				
+|sub items for 7 - bibliotherapy				
+|sno	parent	slug	level	introduction
+7.a	7	narratives-on-lived-experience	2	
+7.b	7	helpful-fiction	2	
+7.c	7	helpful-non-fiction	2	
+7.d	7	videos-podcasts-documentaries	2	
+7.e	7	movies	2	
+				
+|sub items for 8 - common-issues				
+|sno	parent	slug	level	introduction
+8.a	8	stigma	2	
+8.b	8	faith	2	
+8.c	8	dos-and-donts-for-carers	2	
+				
+8.a.i	8.a	social-outlook	3	
+8.a.ii	8.a	employers-approach-in-the-country	3	
+8.a.iii	8.a	dealing-with-workplace-stigma	3	
+8.a.iv	8.a	views-on-matrimony	3	
+				
+8.b.i	8.b	meditation	3	
+8.b.ii	8.b	ayurveda	3	
+8.b.iii	8.b	chanting	3	
+8.b.iv	8.b	yoga	3	
+				
+|sub items for 9 - legal				
+|sno	parent	slug	level	introduction
+9.a	9	local-laws-on-mental-health	2	
+9.b	9	global-laws	2	
+				
+|sub items for 10 - technological-aids				
+|sno	parent	slug	level	introduction
+				
+10.a	10	planners-reminders-and-schedulers	2	
+10.b	10	sleep-trackers	2	
+10.c	10	diet-trackers	2	

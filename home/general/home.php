@@ -1,15 +1,7 @@
 <?php
-function runNodeHome() {
-	runResource('section-cards', [
-		'section' => 'general',
-		'title' => 'General Topics',
-	]);
-}
-
-function runNodePage() {
-	renderNodeItem(__DIR__);
-}
-
+//NB: no longer using 'section-cards'
 runResource(stripExtension(__FILE__), [
-	'section' => pathinfo(__DIR__, PATHINFO_FILENAME),
-	'where' => __DIR__]);
+	'section' => 'general',
+	'title' => 'General Topics',
+	'where' => __DIR__,
+]);
